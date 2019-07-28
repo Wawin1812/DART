@@ -20,21 +20,21 @@ public class MultiColumnCsvSortExtended {
 
 		// Create a comparator that compares the elements from column 0,
 		// in ascending order
-		Comparator<List<String>> c0 = createDesendingComparator(17);
+		Comparator<List<String>> c0 = createDesendingComparator(2);
 
 		// Create a comparator that compares the elements from column 2,
 		// in descending order
-		Comparator<List<String>> c1 = createDesendingComparator(9);
+		Comparator<List<String>> c1 = createDesendingComparator(5);
 
 
 		// Create a comparator that compares primarily by using c0,
 		// and secondarily by using c1
-		Comparator<List<String>> comparator = createComparator(c0, c1);
+		Comparator<List<String>> comparator = createComparator(c1, c0);
 		Collections.sort(lines, comparator);
 
 
 		OutputStream outputStream = new FileOutputStream("output.csv");
-		String header = "";
+		String header = "ENTRY_TYPE,Plantingdate,GID,DESIGNATION,ENTRY_NO,EH_cm,PH_cm,DTA_days__obs,DTS_days__obs,Moi_pct__STD,GW_g__ FieldWB,EarsHvst_ears_plot,RLodg_pl_plot,SLodg_pl_plot,REP_NO,PLOT_NO,column,row ";
 		writeCsv( header, lines, outputStream);
 		System.out.println();
 

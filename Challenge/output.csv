@@ -1,4 +1,4 @@
-
-T,,20917,SINA81,37,120,194,,,17.7,1295,21,3,0,2,90,10,9
+ENTRY_TYPE,Plantingdate,GID,DESIGNATION,ENTRY_NO,EH_cm,PH_cm,DTA_days__obs,DTS_days__obs,Moi_pct__STD,GW_g__ FieldWB,EarsHvst_ears_plot,RLodg_pl_plot,SLodg_pl_plot,REP_NO,PLOT_NO,column,row 
 T,,16736,COAH61,22,166,223,,,14.8,800,14,5,1,2,91,10,10
 T,,8390,COAH56,19,150,230,,,14.6,885,16,0,1,2,92,9,10
+T,,20917,SINA81,37,120,194,,,17.7,1295,21,3,0,2,90,10,9
